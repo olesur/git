@@ -10,14 +10,11 @@ const { link, title, body } = Astro.props;
  
  
  
- 
- 
- 
- <div class="kard">
+<div class="kard">
       <h2 class="card-title">{title}</h2>
-      <a href={link} target="_blank" rel="noopener noreferrer" class="card-link">Enlace</a>
+      <a href={link}>{title}</a>
       <p class="card-body">{body}</p>
-    </div>
+</div>
 
 
     <style>
@@ -32,11 +29,11 @@ const { link, title, body } = Astro.props;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: wheat;
+  color: rgb(255, 255, 255);
 }
 
 .card-link {
-  color: #bbbbbb;
+  color: #ffffff;
   text-decoration: none;
 }
 
