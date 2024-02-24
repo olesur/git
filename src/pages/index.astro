@@ -1,11 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Kard from '../components/Kard.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<img class="astro-a" src="https://olesur.com/educacion/gestor-print/logo-olesur.min-w.svg" />
+		<img alt="logo" class="astro-a" src="https://olesur.com/educacion/gestor-print/logo-olesur.min-w.svg" />
 		<h1>Bienvenido <span class="text-gradient">Itecsur dev.</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -32,6 +33,13 @@ import Card from '../components/Card.astro';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
+
+			<Kard
+				link="https://itecsur.es/"
+				title="itecsur"
+				body="Mi primera tarjeta, no está mál."
+			/>
+
 		</ul>
 	</main>
 </Layout>
